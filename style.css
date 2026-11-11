@@ -26,7 +26,12 @@ html {
 }
 
 body {
-    background-color: var(--background);
+    background:
+    linear-gradient(
+        rgba(25, 25, 25, 0.72),
+        rgba(25, 25, 25, 0.88)
+    ),
+    url("images/spawn.png") center/cover no-repeat;
     color: var(--text);
     font-family: Arial, sans-serif;
     line-height: 1.6;
