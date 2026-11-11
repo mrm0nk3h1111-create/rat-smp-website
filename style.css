@@ -217,3 +217,19 @@ footer {
     margin-top: 12px;
     font-size: 14px;
 }
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h2 {
+    color: var(--cheese);
+    text-shadow: 3px 3px 0 #171717;
+}
+
+.eyebrow {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 6px 12px;
+    border-left: 4px solid var(--cheese);
+}
