@@ -273,3 +273,42 @@ footer {
 .card-icon {
     font-size: 30px;
 }
+
+
+/* Rule appeal labels */
+
+.appeal-status {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid;
+}
+
+.appeal-yes {
+    color: #9BD69B;
+    border-color: #548B54;
+    background: #263B26;
+}
+
+.appeal-no {
+    color: #FF9999;
+    border-color: #A64B4B;
+    background: #462525;
+}
+
+.appeal-conditional {
+    color: var(--cheese);
+    border-color: var(--cheese);
+    background: #40391F;
+}
+
+.rule {
+    line-height: 1.7;
+}
+
+.rule strong {
+    color: var(--cheese-light);
+}
