@@ -1,1 +1,176 @@
 
+/* =================================
+   RAT SMP - Main Stylesheet
+   ================================= */
+
+:root {
+    --background: #242424;
+    --surface: #393939;
+    --surface-light: #484848;
+    --cheese: #F2C94C;
+    --cheese-light: #FFE7A0;
+    --text: #F1F1F1;
+    --muted: #BDBDBD;
+}
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+
+header {
+    background-color: var(--surface);
+    border-bottom: 4px solid var(--cheese);
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h1 {
+    color: var(--cheese);
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--cheese);
+}
+
+/* Main hero section */
+
+.hero {
+    min-height: 470px;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--surface);
+    border-bottom: 5px solid var(--cheese);
+}
+
+.eyebrow {
+    color: var(--cheese);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h2 {
+    font-size: clamp(36px, 6vw, 64px);
+    margin: 12px 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: var(--cheese);
+    color: #242424;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #C69B27;
+    box-shadow: 4px 4px 0 #171717;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.button:hover {
+    background-color: var(--cheese-light);
+    transform: translate(-2px, -2px);
+}
+
+/* Content sections */
+
+section:not(.hero) {
+    padding: 65px 8%;
+    border-bottom: 2px solid var(--surface-light);
+}
+
+section h2 {
+    color: var(--cheese);
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+section p {
+    color: var(--muted);
+}
+
+/* Footer */
+
+footer {
+    background-color: #191919;
+    padding: 25px 8%;
+    text-align: center;
+    color: var(--muted);
+    border-top: 3px solid var(--cheese);
+    font-size: 14px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    section:not(.hero) {
+        padding: 45px 6%;
+    }
+}
+
