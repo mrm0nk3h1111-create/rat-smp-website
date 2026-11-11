@@ -1,15 +1,13 @@
 // RAT SMP - Website Scripts
 
-// Copy the server IP
 function copyServerIP() {
-    const serverIP = "rats444.aternos.me ";
+    const serverIP = document.getElementById("server-ip").textContent;
 
     navigator.clipboard.writeText(serverIP)
         .then(() => {
-            alert("Server IP copied!");
+            alert("RAT SMP IP copied!");
         })
         .catch(() => {
-            alert("Couldn't copy the server IP. Please copy it manually.");
+            alert("Couldn't copy the IP. Please copy it manually.");
         });
 }
-
