@@ -312,3 +312,22 @@ footer {
 .rule strong {
     color: var(--cheese-light);
 }
+
+
+.discord-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #414FC2;
+    box-shadow: 4px 4px 0 #171717;
+    transition: 0.2s;
+}
+
+.discord-button:hover {
+    background-color: #7289FF;
+    transform: translate(-2px, -2px);
+}
